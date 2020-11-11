@@ -1,0 +1,127 @@
+.contact {
+  padding: 28px 0 128px;
+  background-image: url("../img/contact-bg-left.png"), url("../img/contact-bg-bottom.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 720px) top, calc(50% + 720px) 100%;
+}
+.contact__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__left {
+  max-width: 540px;
+}
+.contact__title {
+  font-size: 64px;
+  line-height: 100px;
+  margin: 0;
+  color: #fff;
+  margin-bottom: 16px;
+  font-weight: 600px;
+}
+.contact__sub-title {
+  font-size: 32px;
+  line-height: 48px;
+  color: #F67E7E;
+  margin: 0;
+  margin-bottom: 32px;
+}
+.contact__right {
+  width: 542px;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form-contact {
+}
+.form-contact__input {
+  width: 100%;
+  padding: 17px 14px;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  background-color: transparent;
+  line-height: 25px;
+  border-bottom: 2px solid #fff;
+  opacity: 0.6;
+  margin-bottom: 24px;
+}
+.contact-form__textarea {
+  width: 100%;
+   padding: 17px 14px;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  background-color: transparent;
+  line-height: 25px;
+  border-bottom: 2px solid #fff;
+  opacity: 0.6;
+  margin-bottom: 24px;
+}
+.contact-form__bnt {
+  border-radius: 25px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  &:focus {
+    outline: 0;
+    border-radius: 25px;
+    border: 2px solid orange;
+  }
+}
+@include breakpoint-down (1550) {
+  .contact {
+    background-position: left top, right bottom;
+  }
+}
+@include breakpoint-down (1328) {
+  .contact__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__left {
+    margin-bottom: 80px;
+  }
+}
+@include breakpoint-down (768) {
+  .contact__left {
+    max-width: 515px;
+  }
+    .contact__title {
+    text-align: center;
+line-height: 56px;
+  }
+  .contact__sub-title {
+    text-align: center;
+    font-size: 32px;
+line-height: 48px;
+  }
+  .contact {
+    background-position: left top, right 110%;
+    padding-bottom: 112px;
+  }
+}
+@include breakpoint-down (728) {
+  .contact {
+    background-image: url("../img/contact-bg-bottom.png");
+    background-position: right 110%;
+  }
+}
+@include breakpoint-down (581) {
+  .contact__left {
+    width: 100%;
+  }
+  .contact__title {
+    font-size: 40px;
+line-height: 40px;
+  }
+  .contact {
+    padding-bottom: 88px;
+  }
+  .contact__right {
+    width: 100%;
+  }
+}

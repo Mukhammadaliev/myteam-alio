@@ -1,0 +1,41 @@
+.site-header {
+  padding: 73px 0;
+  background-color: #014E56;
+}
+.site-header__wrapper {
+  display: flex;
+  align-items: center;
+}
+.parda {
+  display: none;
+}
+@include breakpoint-down (768) {
+  .site-header {
+    padding: 70px 0;
+  }
+}
+@include breakpoint-down (678) {
+  .site-header {
+    padding: 25px 0;
+    position: fixed;
+    left: 0;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+  }
+  body {
+    margin-top: 82px;
+    position: relative;
+  }
+  .site-header--open .parda {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}

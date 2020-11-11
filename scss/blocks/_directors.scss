@@ -1,0 +1,128 @@
+.directors {
+  background-color: #004047;
+  padding: 140px 0 110px;
+  background-image: url("../img/directors-bg-left.png"), url("../img/directors-bg-bottom.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 720px) top, calc(50% + 700px) bottom;
+}
+.directors__title {
+  text-align: center;
+  margin: 0;
+  font-size: 48px;
+line-height: 48px;
+color: #FFFFFF;
+margin-bottom: 64px;
+}
+.directors__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -15px;
+}
+.directors__item {
+  width: 350px;
+  background-color: #012F34;
+  text-align: center;
+  margin: 0 15px;
+  margin-bottom: 76px;
+  padding: 32px 24px 56px;
+  position: relative;
+  z-index: 2;
+}
+.director__img {
+  width: 96px;
+  height: 96px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 16px;
+}
+.director__title {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0;
+  color: #79C8C7;
+}
+.director__text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.director__btn {
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  padding: 0;
+  border: none;
+  background-color: #F67E7E;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  font-size: 26px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+}
+.director__info {
+  display: none;
+}
+.director__quote {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.director__social {
+  @include reset-list;
+  display: flex;
+  max-width: 60px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.director__social-link {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.director--open .director__info {
+  display: block;
+}
+.director--open .director__box {
+  display: none;
+}
+.director--open .director__btn {
+  background-color: #79C8C7;
+  background-image: url("../img/x.svg");
+}
+
+@include breakpoint-down (1544) {
+  .directors {
+    background-position: left top, 100% 100%;
+  }
+}
+@include breakpoint-down (768) {
+  .directors__title {
+    font-size: 32px;
+line-height: 32px;
+margin-bottom: 20px;
+  }
+  .directors {
+    padding: 100px 0 98px;
+  }
+}
+@include breakpoint-down (500) {
+  .directors {
+    background-position: left -100px, 100% 100%;
+    padding: 88px 0 58px;
+  }
+}

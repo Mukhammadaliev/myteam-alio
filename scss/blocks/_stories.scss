@@ -1,0 +1,121 @@
+.stories {
+  padding: 140px 0;
+  background-image: url("../img/stories-bg-left.png"), url("../img/stories-bg-right.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 700px) top, calc(50% + 700px) bottom;
+}
+.stories__title {
+  text-align: center;
+  font-size: 48px;
+  max-width: 952px;
+  margin: 0 auto;
+  line-height: 48px;
+  margin: 0;
+  margin-bottom: 50px;
+  color: #fff;
+}
+.span {
+  color: #79C8C7;
+}
+.stories__list {
+  padding: 0;
+  margin: 0 -15px;
+  list-style: none;
+  display: flex;
+}
+.stories__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 36px 0 0 0;
+  width: 350px;
+  margin: 0 15px;
+  &::before {
+    content: "";
+  display: inline-block;
+  width: 67px;
+  height: 58px;
+  background-image: url("../img/stories-item-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 10px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  }
+}
+.card__text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 24px;
+  color: #fff;
+  flex: 1 1 auto;
+}
+.card-info__name {
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+  margin: 0;
+  margin-bottom: 2px;
+}
+.card-info__text {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 32px;
+  color: #fff;
+}
+.card-info__img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+@media (max-width: 1600px) {
+  .stories {
+    background-position: left top, right bottom;
+  }
+}
+@media (max-width: 768px) {
+  .stories {
+    background-position: left top, right bottom;
+    padding: 100px 0;
+  }
+  .stories__title {
+    font-size: 32px;
+    line-height: 32px;
+    max-width: 573px;
+    margin: 0 auto 84px;
+  }
+  .stories__list {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 573px;
+    text-align: center;
+  }
+  .card__text {
+    margin-bottom: 16px;
+  }
+  .stories__item {
+    margin: 0;
+    margin-bottom: 84px;
+    width: 100%;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: 420px) {
+ .stories {
+   padding: 140px 0 164px;
+ }
+}

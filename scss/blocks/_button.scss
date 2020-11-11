@@ -1,0 +1,81 @@
+.menu-burger {
+  display: none;
+}
+
+.navbar__btn {
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  margin-left: auto;
+
+}
+.navbar__btn:hover {
+  color: #014E56;
+  background-color: #fff;
+}
+.global-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 32px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  vertical-align: baseline;
+}
+
+@include breakpoint-down (678) {
+  .menu-burger {
+    display: inline-block;
+    margin-left: auto;
+    z-index: 5;
+    padding: 0;
+    width: 20px;
+    height: 17px;
+    background-image: url("../img/menu-burger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    outline: 0;
+    &::after {
+      content: "";
+      width: 40px;
+      height: 34px;
+      position: absolute;
+      left: -10px;
+      top: -8.5px;
+      display: inline-block;
+    }
+    &:focus::after {
+      border: 2px solid orange;
+      border-radius: 5px;
+    }
+  }
+  .navbar__btn {
+    margin-left: 0;
+  }
+  .site-header--open .menu-burger {
+    background-image: url("../img/burger-close.svg");
+  }
+}
+
+.started__btn {
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #012F34;
+  border: 2px solid #012F34;
+  border-radius: 25px;
+}
+.started__btn:hover {
+  color: #fff;
+  background-color: #012F34;
+}
+@include breakpoint-down (700) {
+  .started__btn {
+    margin-left: 0;
+  }
+}

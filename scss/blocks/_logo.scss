@@ -1,0 +1,15 @@
+.logo {
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: 160px;
+}
+.logo__img {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+@include breakpoint-down (768) {
+  .logo {
+  max-width: 128px;
+}
+}
