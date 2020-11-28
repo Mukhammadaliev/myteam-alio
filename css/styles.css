@@ -708,6 +708,7 @@ img {
   color: #fff;
   text-decoration: none;
   margin-right: 40px;
+  text-align: center;
 }
 
 .footer-item__link:last-child {
@@ -856,6 +857,12 @@ path:hover {
   .footer-item--logo {
     min-width: 160px;
     margin: 0 auto 24px;
+    text-align: center;
+  }
+  .footer-item__box {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1401,6 +1408,7 @@ path:hover {
   color: #fff;
   text-decoration: none;
   margin-right: 40px;
+  text-align: center;
 }
 
 .footer-item__link:last-child {
@@ -1549,6 +1557,12 @@ path:hover {
   .footer-item--logo {
     min-width: 160px;
     margin: 0 auto 24px;
+    text-align: center;
+  }
+  .footer-item__box {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
