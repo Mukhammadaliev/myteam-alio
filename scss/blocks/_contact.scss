@@ -34,8 +34,6 @@
   flex-direction: column;
   align-items: flex-start;
 }
-.form-contact {
-}
 .form-contact__input {
   width: 100%;
   padding: 17px 14px;
@@ -48,6 +46,7 @@
   border-bottom: 2px solid #fff;
   opacity: 0.6;
   margin-bottom: 24px;
+  outline: 0;
 }
 .contact-form__textarea {
   width: 100%;

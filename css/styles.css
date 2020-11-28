@@ -591,6 +591,12 @@ img {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.navbar__item-link:hover {
+  color: #F67E7E;
 }
 
 @media only screen and (max-width: 768px) {
@@ -870,7 +876,7 @@ path:hover {
   padding: 50px 0 250px;
   background-image: url("../img/main-hero-bg-left.png"), url("../img/main-hero-bg-bottom.png");
   background-repeat: no-repeat;
-  background-position: left 50px, calc(50% + 400px) 100%;
+  background-position: calc(50% - 700px) 50px, calc(50% + 400px) 100%;
 }
 
 .main-hero__wrapper {
@@ -918,7 +924,7 @@ path:hover {
   margin-bottom: 60px;
 }
 
-@media only screen and (max-width: 1318px) {
+@media only screen and (max-width: 1500px) {
   .main-hero {
     background-position: left 250px, calc(50% + 400px) 100%;
   }
@@ -1997,6 +2003,7 @@ path:hover {
   border-bottom: 2px solid #fff;
   opacity: 0.6;
   margin-bottom: 24px;
+  outline: 0;
 }
 
 .contact-form__textarea {
